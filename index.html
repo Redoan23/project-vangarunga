@@ -48,11 +48,48 @@
 
            </p>
            <p> 
-              Do you like the photos avobe? <br> <br>
-              <input type="checkbox" name="chkbx" value="1" id="">Yes 
-              <input type="checkbox" name="chkbx" value="2" id="">NO 
-           </p>
-           <p><button type="submit" >submit</button></p>
+              Do you like the photos avobe? please choose only one option <br> <br>
+              <input type="checkbox" name="chkbx" value="yes" id="yess" checked>
+              <label for="chkbx">Yes</label>
+
+              <input type="checkbox" name="chkbx2" value="no" id="noo" disabled>
+              <label for="chkbx2">NO</label> 
+           </p><br>
+           <div>
+               <form action="submit.html">
+
+                 <fieldset width="20%">
+                    <legend>Your personal information</legend>
+
+                   <label for="name">Your name:</label><br>
+                   <input type="text" name="name" id="nam" placeholder="write your name"><br>
+               
+
+                  <label for="email">Your email:</label> <br>
+                  <input type="email" name="email" id="email" placeholder="write your email"><br>
+               
+                  <label for="password">Your password:</label><br>
+                  <input type="password" name="password" id="pass"><br>
+
+                  <label for="tel">Your number:</label><br>
+                  <input type="tel" name="tel" id="tel"><br>
+
+                  <label for="number" >Your age:</label><br>
+                  <input type="number" name="number" id="number" placeholder="only 12+"><br>
+
+                  <label for="date">Your birthday:</label><br>
+                  <input type="date" name="date" id="date" ><br>
+                  
+                </fieldset>
+               
+
+               </form>
+            </div>
+           <p><button type="submit" onclick="alert('submitted')">submit</button></p>
         </div>
+        <footer>
+            ©Redoan AL mahmud
+            <a href="https://facebook.com/redoan.rafi.rainbird23" target="_blank">Facebook</a>
+        </footer>
     </body>
 </html>
